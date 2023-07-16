@@ -1,7 +1,6 @@
-@import 'reset';
-@import 'libs';
-@import 'vars';
-@import 'global';
+@import './reset';
+@import './libs';
+@import './vars';
+@import './global';
 
-
-@import './modules/footer';
+@import './modules/navigation';
