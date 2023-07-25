@@ -23,6 +23,14 @@ main {
   max-width: 1180px;
   padding: 0 10px;
   margin: 0 auto;
+
+  @media (max-width: $lg) {
+    padding: 0 20px;
+  }
+
+  @media (max-width: $sm) {
+    padding: 0 10px;
+  }
 }
 
 // .section {
@@ -102,6 +110,13 @@ main {
   &:active {
     color: $accent-dark;
   }
+
+  &--centered {
+    @media (max-width: $sm) {
+      width: 100%;
+      padding: 10px;
+    }
+  }
 }
 
 // .title {
@@ -120,18 +135,18 @@ main {
 //   }
 // }
 
-// .sr-only {
-//   position: absolute;
-//   width: 1px;
-//   height: 1px;
-//   margin: -1px;
-//   border: 0;
-//   padding: 0;
-//   white-space: nowrap;
-//   clip-path: inset(100%);
-//   clip: rect(0 0 0 0);
-//   overflow: hidden;
-// }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 // .grid {
 //   display: grid;
